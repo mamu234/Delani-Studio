@@ -23,3 +23,12 @@
     width: 90px;
     height: 80px;
   }
+
+  #mouse-click{
+    padding-top : 11px;
+    margin-top: 9%;
+    padding-bottom: 20px; 
+  }
+  #mouse-click {
+    animation: bounce 2s infinite;
+  }
