@@ -93,3 +93,22 @@
   .what-we-do .headings{
     padding-bottom: 38px;
   }
+  
+  .col-md-3 img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .portfolio h2{
+    text-align: center;
+    padding-top:40px;
+    font-family: 'Gabriela', serif;
+  }
+  
+  #portfolio{
+    margin-left:18%;
+    margin-right: 15%; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+  }
