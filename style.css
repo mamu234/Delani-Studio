@@ -69,7 +69,7 @@ html{
     padding-bottom: 30px;
     padding-top:40px;
     font-family: playfair Display;
-    font-size: 40px;
+    font-size: 38px;
   }
   #about{
     font-family:playfair Display;
@@ -83,11 +83,12 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
     font-family: playfair Display;
-    font-size: 45px;
+    font-size: 30px;
   }
   .services h2{
     font-family:playfair Display;
-    font-size: 35px;
+    font-size: 70px;
+    letter-spacing:5px;
     
   }
   #servicesoverlay{
@@ -104,6 +105,8 @@ html{
   }
   .what-we-do .headings{
     padding-bottom: 38px;
+    font-size: 50px;
+    font-family:playfair Display; 
     
   }
   #portfolio{
@@ -128,7 +131,7 @@ html{
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    /* text-align: center; */
+  
   }
   .title{
     padding: 6px;
@@ -222,6 +225,11 @@ html{
       margin-bottom: 20px;
   
     }
+    .col-md-4 img{
+      width:  50px;
+      margin: 30px; 
+      float: right;
+    }
   }
   @media only screen and (max-width: 425px){
     #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
@@ -232,9 +240,10 @@ html{
       padding-top: 20%;
       font-size: 20px;
     }
-    .col-md-3 img{
-      width:100%px;
-      margin: 20px;
+   .col-md-3 img{
+  max-width: 100%;
+  max-height: 100%;
+}
     }
     #portfolio{
       margin-left:8%;
