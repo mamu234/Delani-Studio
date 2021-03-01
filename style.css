@@ -1,3 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css?family=Copse|Delius+Swash+Caps|Gabriela|Unkempt&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+
 .landing{
     background-image: url('pictures/background.jpg');
     background-position: center center;
@@ -26,6 +32,7 @@
     margin-bottom: 40px;
     position: relative;
     top: 250px;
+    font-family: playfair Display;
   }
   #logo{
     position:absolute;
@@ -37,9 +44,9 @@
   }
 
   #mouse-click{
-    padding-top : 20px;
-    margin-top: 20%;
-    padding-bottom: 30px; 
+    padding-top : 30px;
+    margin-top: 30%;
+    padding-bottom: 40px; 
   }
   #mouse-click {
     animation: bounce 2s infinite;
@@ -61,11 +68,11 @@
     text-align: center;
     padding-bottom: 30px;
     padding-top:40px;
-    font-family: 'Copse', serif;
-    font-size: 45px;
+    font-family: playfair Display;
+    font-size: 40px;
   }
   #about{
-    font-family: 'Gabriela', serif;
+    font-family:playfair Display;
   }
 
   .services{
@@ -75,11 +82,12 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Copse', serif;
-    font-size: 18px;
+    font-family: playfair Display;
+    font-size: 45px;
   }
   .services h2{
-    font-family: 'Gabriela', serif;
+    font-family:playfair Display;
+    font-size: 35px;
     
   }
   #servicesoverlay{
@@ -212,7 +220,7 @@
       margin-left: 2%;
       padding-bottom: 30px;
       margin-bottom: 20px;
-    
+  
     }
   }
   @media only screen and (max-width: 425px){
