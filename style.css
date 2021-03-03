@@ -101,12 +101,23 @@ html{
     text-align: center;
     padding-top: 40px;
     font-family: 'Gabriela', serif;
-
+    font-size: 50px;
+  
   }
+.col-md-4{
+display: inline-flex;
+padding: 150px;
+}
+.title{
+  font-size: 50px;
+}
+
+}
   .what-we-do .headings{
     padding-bottom: 38px;
-    font-size: 50px;
+    font-size: 70px;
     font-family:playfair Display; 
+    margin-right: 50px;
     
   }
   #portfolio{
@@ -124,14 +135,17 @@ html{
     text-align: center;
     padding-top:40px;
     font-family: 'Gabriela', serif;
+    font-size: 50px;
+    letter-spacing: 10px;
   }
   .contact{
-    background-image: url('../images/backgrounds/c_image.jpg');
-    background-position: center center;
+    background-image: url('pictures/c-image.jpg');
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    /* text-align: center; */
+   text-align: center;
+   font-size: 45px;
   }
   .title{
     padding: 6px;
@@ -146,8 +160,9 @@ html{
   input[type=text],input[type=email],#comment{
     background: transparent;
     color: white;
-    font-size: 20px;
+    font-size: 40px;
     font-family: 'Copse', serif;
+    margin-bottom: 30px;
   }
   
   .form-control::-webkit-input-placeholder { 
@@ -174,9 +189,11 @@ html{
     text-align: center;
     padding-top: 30px;
     font-family: 'Delius Swash Caps', cursive;
+    font-size: 40px;
   }
   footer p{
     margin-top: 10px;
+    font-size: 30px;
   }
   #product, #development, #design{
     display: none;
@@ -209,7 +226,7 @@ html{
       top: 20px;
       left: 16px;
       padding-top: 20%;
-      /* font-size: 16px; */
+      font-size: 16px;
     }
     .col-md-3 img{
       width:100%px;
@@ -223,9 +240,6 @@ html{
       margin-left: 2%;
       padding-bottom: 30px;
       margin-bottom: 20px;
-      /* margin-left: 10px; */
-  
-      /* margin-right: -20%; */
     }
   }
   @media only screen and (max-width: 425px){
