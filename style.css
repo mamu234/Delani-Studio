@@ -101,7 +101,9 @@ html{
     text-align: center;
     padding-top: 40px;
     font-family: 'Gabriela', serif;
-    font-size: 50px;
+    font-size: 30px;
+    font-weight: lighter;
+    
   
   }
 .col-md-4{
@@ -111,9 +113,7 @@ padding: 150px;
 .title{
   font-size: 50px;
 }
-
-}
-  .what-we-do .headings{
+.what-we-do .headings{
     padding-bottom: 38px;
     font-size: 70px;
     font-family:playfair Display; 
@@ -124,8 +124,13 @@ padding: 150px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-left:18%;
-    margin-right: 16%; 
+    margin-left:30%;
+    margin-right: 20%; 
+  }
+
+  .container{
+    margin-left: 16%;
+
   }
   .col-md-3 img{
     max-width: 100%;
@@ -218,6 +223,14 @@ padding: 150px;
     font-size: 30px;
     padding-top: 50%;
     font-family: 'Delius Swash Caps', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition:opacity 0.25s
+  }
+  #overlay p:hover{
+    opacity: 1;
   }
   @media only screen and (max-width: 755px){
     #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
@@ -253,7 +266,7 @@ padding: 150px;
     }
     .col-md-3 img{
       width:100%px;
-      margin: 20px;
+      margin: 40px;
     }
     #portfolio{
       margin-left:8%;
@@ -309,7 +322,21 @@ padding: 150px;
       margin: 20px;
     }
     #portfolio{
-      margin-left:6%;
+      margin-left:4%;
       margin-right: 10%; 
+      letter-spacing: 6px;
+    }
+
+  #btn{
+    font-size: 50px;
+    background-color:rgb(53, 53, 247);
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    border-radius: 30px;
+  }
+    .portfolio h2{
+      font-size: 60px;
+      font-weight: lighter;
     }
   }
