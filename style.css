@@ -1,7 +1,6 @@
 
 
 
-
 html{
   scroll-behavior: smooth;
 }
@@ -337,8 +336,9 @@ padding: 150px;
     font-size: 30px;
     border-radius: 30px;
   }
-    .portfolio h2{
+     .container h2{
       font-size: 60px;
       font-weight: lighter;
-    }
-  }
+
+  } 
+}
