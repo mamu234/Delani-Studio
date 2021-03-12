@@ -83,18 +83,85 @@ html{
 
 }
 
-.what-we-do{
-  font-family: 'Quattrocento', serif;
-  text-align: center;
-  font-family: 'Gabriela', serif;
+
+.what-section {
+  padding:50px;
+  display: inline-block;
+}
+
+.what-heading {
+color: black;
+text-align: center;
+font-size: 50px;
+
+}
+
+.what-subheading {
   font-size: 40px;
-  display: block;
+}
+
+.what-para{
+  color:black;
+  display: none;
+  font-size: 53px;
+}
+
+
+.container{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
   
- 
   
 }
-.what-we-do .headings{
-  padding-bottom: 38px;
-  font-size: 40px;
+.image{
+  display: block;
+  width: 400px;
+  height: 400px;
+margin-left: 250px;
+}
+.overlay{
+  position: absolute;
+  transition: all .3s ease;
+  opacity: 0;
+  background-color: inherit;
   
+}
+.container:hover .overlay{
+  opacity: 2.25;
+}
+
+.text{
+  color: bold black;
+  font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition:translate(-10%, -10%);
+  font-size: 50px;
+}
+.overlayCenter{
+  height: 90%;
+  width: 0;
+  top: 0;
+  left: 0;
+}
+
+.overlayRight{
+  height: 100%;
+  width:30px;
+  top: 0;
+  left: 0;
+
+}
+  .overlayFade{
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+  
+}
+.container:hover .overlayCenter,.container:hover .overlayRight,.container:hover .overlayFade ,.container:hover .overlayFade {
+  width: 100%;
 }
