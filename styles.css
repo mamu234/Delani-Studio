@@ -48,16 +48,19 @@ html{
     transform: translateY(- 50px);
   }
 }
-.conatainer{
+
+#About h2{
   text-align: center;
-  padding-bottom: 30px;
-  padding-top:40px;
-  font-family: playfair Display;
-  font-size: 38px;
+  font-size: 45px;
+  font-family: EB Garamond;
+  letter-spacing: 5px;
+
 }
-#about{
-  font-family:playfair Display;
- font-size: 60px;
+#About p{
+  font-family:EB Garamond ;
+  font-size: 40px;
+  text-align: center;
+
 }
 .services{
   text-align: center;
@@ -118,8 +121,8 @@ font-size: 50px;
 }
 .container .box{
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   margin:  10px;
   box-sizing: border-box;
   display: inline-block;
