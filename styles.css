@@ -54,6 +54,7 @@ html{
   padding-top:40px;
   font-family: 'Copse', serif;
   font-size: 35px;
+  color: black;
 }
 #about{
   font-family: 'Gabriela', serif;
@@ -108,60 +109,53 @@ font-size: 50px;
 
 
 .container{
+  width:  1280px;
+  min-height: 500px;
+ color:whitesmoke;
+  margin: 70px auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.container .box{
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
+  background:whitesmoke;
+  margin:  10px;
+  box-sizing: border-box;
   display: inline-block;
-  
-  
 }
-.image{
-  display: block;
-  width: 400px;
-  height: 400px;
-margin-left: 250px;
+.container .box .imgBox{
+  position: relative;
+  overflow: hidden;
 }
-.overlay{
-  position: absolute;
-  transition: all .3s ease;
-  opacity: 0;
-  background-color: inherit;
-  
-}
-.container:hover .overlay{
-  opacity: 2.25;
-}
-
-.text{
-  color: bold black;
-  font-family: sans-serif;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transition:translate(-10%, -10%);
-  font-size: 50px;
-}
-.overlayCenter{
-  height: 90%;
-  width: 0;
-  top: 0;
-  left: 0;
-}
-
-.overlayRight{
-  height: 100%;
-  width:30px;
-  top: 0;
-  left: 0;
+.container .box .imgBox img{
+  max-width: 600%;
+  transition: transform 2s;
 
 }
-  .overlayFade{
-    height: 100%;
-    width: 0;
-    top: 0;
-    left: 0;
-  
+.container .box:hover .imgBox img{
+  transform:scale(1.2);
 }
-.container:hover .overlayCenter,.container:hover .overlayRight,.container:hover .overlayFade ,.container:hover .overlayFade {
-  width: 100%;
+.container .box .details{
+  position:absolute;
+  top:  10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: none;
+  transform: scaleY(0);
+  transition: transform .5s;
+}
+.container .box .details h2{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color:whitesmoke;
+}
+
+.container .box:hover .details{
+  transform:scaleY(1)
 }
