@@ -96,6 +96,7 @@ html{
 .what-we-do .headings{
   padding-bottom: 38px;
 }
+
 #product, #development, #design{
   display: none;
   font-family: 'Copse', serif;
@@ -104,52 +105,61 @@ html{
 #product .title, #development .title, #design .title{
   font-size: 20px;
   font-weight: 600;
+
+}
+.col-md-4{
+  float:left;
+  /* width: 33.33%;  */
+  padding: 20px;
+  font-size: 40px;
+  padding-right:2px;
+
+}
+.row::after {
+  content: "";
+  clear:both;
+  display:table;
+  padding-left:20px;
 }
 
 
-.what-we-do{
-  font-family: 'Quattrocento', serif;
+/* .portfolio h2{
   text-align: center;
-  padding-top: 40px;
-  font-family: 'Gabriela', serif;
-}
-.what-we-do .headings{
-  padding-bottom: 38px;
-}
-
-.col-md-3 img{
-  max-width: 100%;
-  max-height: 100%;
-}
-.portfolio h2{
-  text-align: center;
+  margin-left: 400px;
   padding-top:40px;
-  font-family: 'Gabriela', serif;
+  font-family: EB Garamond;
+  font-size: 50px;
+
+
 }
 .container{
-  width:  1280px;
-  min-height: 500px;
-  margin: 70px auto 0;
+  width:  1000px;
+  min-height:100px;
+  margin-left: 90px;
+  margin: 3px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
+  
 }
 .container .box{
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin:  10px;
+  position:relative;
+  width:300px;
   box-sizing: border-box;
-  display: inline-block;
+  float:left;
+  padding:3px;
 }
+
+
 .container .box .imgBox{
   position: relative;
   overflow: hidden;
+  
 }
 .container .box .imgBox img{
-  max-width: 600%;
+  max-width: 1000px;
   transition: transform 2s;
+  
 
 }
 .container .box:hover .imgBox img{
@@ -161,20 +171,151 @@ html{
   left: 10px;
   bottom: 10px;
   right: 10px;
-  transform: scaleY(0);
+  transform: scale(0);
   transition: transform .5s;
+  background-color: rgb(250, 245, 245);
 }
 .container .box .details h2{
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  color:whitesmoke;
+  font-size: 50px;
+  color:black;
+  text-align: center;
 }
 
 .container .box:hover .details{
   transform:scaleY(1)
+} */
+
+#portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left:18%;
+  margin-right: 16%; 
+}
+.col-md-3 img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.portfolio h2{
+  text-align: center;
+  padding-top:40px;
+  font-family: 'Gabriela', serif;
 }
 
+#overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+  display: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(255, 255, 255, 0.456);
+  position:absolute;
+  top: 20px;
+  left: 35px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50%;
+  font-family: 'Delius Swash Caps', cursive;
+}
+@media only screen and (max-width: 755px){
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 16px;
+    padding-top: 20%;
+    /* font-size: 16px; */
+  }
+  .col-md-3 img{
+    width:100%px;
+    margin: 20px;
+  }
+  #portfolio{
+    margin-left:8%;
+    margin-right: 16%; 
+  }
+  button{
+    margin-left: 2%;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    /* margin-left: 10px; */
+
+    /* margin-right: -20%; */
+  }
+}
+@media only screen and (max-width: 425px){
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 16px;
+    padding-top: 20%;
+    font-size: 20px;
+  }
+  .col-md-3 img{
+    width:100%px;
+    margin: 20px;
+  }
+  #portfolio{
+    margin-left:8%;
+    margin-right: 16%; 
+  }
+  button{
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  #MERGE0{
+    width: 84%;
+    margin-left: 4%;
+    padding-bottom: 10px;
+  }
+  #MERGE1{
+    width: 100%;
+    margin-left: 4%;
+    margin-bottom: 20px;
+  }
+  #comment{
+    margin-left: 4%;
+    width: 84%;
+  }
+}
+@media only screen and (min-width: 825px){
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 20px;
+    padding-top:30%; 
+  }
+  .col-md-3 img{
+    width: 400px;
+    margin: 20px;
+  }
+  #portfolio{
+    margin-left:10%;
+    margin-right: 10%; 
+  }
+}
+@media only screen and (min-width: 625px){
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5,#overlay6,#overlay7,#overlay8{
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 20px;
+    padding-top:20%; 
+    font-size: 26px;
+  }
+  .col-md-3 img{
+    width: 400px;
+    margin: 20px;
+  }
+  #portfolio{
+    margin-left:6%;
+    margin-right: 10%; 
+  }
+}
 
 section#contact {
   background-color: #212529;
